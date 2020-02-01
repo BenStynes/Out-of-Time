@@ -74,3 +74,28 @@ bool Clock::checkForpositionOnRelease(sf::Vector2f t_pos[])
 	}
 }
 
+sf::Vector2f Clock::getWinPosition(int t_help)
+{
+	switch (t_help)
+	{
+	default:
+		break;
+	
+	case 0:
+		return m_winPositions[0];
+		break;
+	case 1:
+		return m_winPositions[1];
+		break;
+	case 2:
+		return m_winPositions[2];
+		break;
+	case 3:
+		return m_winPositions[3];
+		break;
+	case 4:
+		return m_winPositions[4];
+		break;
+	}
+}
+
