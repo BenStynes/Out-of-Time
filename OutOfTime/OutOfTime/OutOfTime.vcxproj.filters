@@ -9,6 +9,7 @@
     <ClCompile Include="TitleScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GameoverScene.cpp" />
+    <ClCompile Include="Gear.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
@@ -21,5 +22,6 @@
     <ClInclude Include="GameoverScene.h" />
     <ClInclude Include="ResourceHolder.h" />
     <ClInclude Include="SharedContext.h" />
+    <ClInclude Include="Gear.h" />
   </ItemGroup>
 </Project>
