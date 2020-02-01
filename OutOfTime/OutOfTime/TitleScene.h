@@ -1,6 +1,8 @@
 #pragma once
 #include "BaseScene.h"
 
+#include <SFML/Graphics/Sprite.hpp>
+
 class TitleScene final : public BaseScene {
 public:
     TitleScene(SceneManager& sceneManager, const SceneType sceneType);
@@ -12,4 +14,5 @@ public:
     void onExit() override;
 
 private:
+	sf::Sprite m_sprite;
 };

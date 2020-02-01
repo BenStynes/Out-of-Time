@@ -6,10 +6,11 @@
 #include <unordered_map>
 #include "BaseScene.h"
 #include "SceneTypes.h"
+#include "SharedContext.h"
 
 class SceneManager {
 public:
-    explicit SceneManager();
+	explicit SceneManager(const SharedContext& context);
 
 	void handleEvents(const sf::Event& event) const;
     void update(const sf::Time deltaTime) const;
@@ -22,6 +23,7 @@ public:
     bool isSceneStackEmpty() const;
     
     SceneType getCurrentScene() const;
+	const SharedContext& getSharedContext() const;
 
     template <typename T> 
     void registerScene(const SceneType sceneType) {
@@ -29,6 +31,7 @@ public:
             return std::make_unique<T>(*this, sceneType);
         };
     }
+
     
 private:
     using SceneChanges = std::vector<SceneChange>;
@@ -38,6 +41,7 @@ private:
     SceneStack    m_sceneStack;
     SceneChanges  m_sceneChanges;
     SceneFactory  m_sceneFactory;
+	SharedContext m_sharedContext;
 
     void pushScene(const SceneType sceneType);
     void removeCurrentScene();
