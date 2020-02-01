@@ -11,8 +11,8 @@
 #include <SFML/Graphics/Texture.hpp>
 
 enum class TextureId {
-	kBase,
-	kCog
+	kTitle,
+	kGameBackground
 };
 
 enum class SoundId {

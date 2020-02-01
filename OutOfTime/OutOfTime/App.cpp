@@ -12,8 +12,8 @@ App::App() :
 
 bool App::setup() {
 	// Load Textures
-	m_texHolder.load(TextureId::kBase, "Assets/Texture/Backgrounds/title.png");
-	
+	m_texHolder.load(TextureId::kTitle, "Assets/Texture/Backgrounds/title.png");
+	m_texHolder.load(TextureId::kGameBackground, "Assets/Texture/Backgrounds/splashScreenText.jpg");
 	// Load Font
 
 	// Load Sound

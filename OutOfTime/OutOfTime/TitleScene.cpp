@@ -31,7 +31,7 @@ void TitleScene::onEnter() {
 	std::cout << "Entered Title Scene \n";
 
 	const auto& texHolder = getSharedContext().texHolder;
-	m_sprite.setTexture(texHolder.get(TextureId::kBase));
+	m_sprite.setTexture(texHolder.get(TextureId::kTitle));
 }
 
 

@@ -1,5 +1,6 @@
 #include "Clock.h"
 
+
 Clock::Clock()
 {
 	setUpClock();
@@ -7,7 +8,7 @@ Clock::Clock()
 
 void Clock::setUpClock()
 {
-	m_clockTexture.loadFromFile("Temp");
+	m_clockTexture.loadFromFile("Assets/Texture/Base.png");
 	m_clockSprite.setTexture(m_clockTexture);
 	for (int i = 0; i < 4; i++)
 	{

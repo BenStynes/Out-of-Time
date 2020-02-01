@@ -36,6 +36,9 @@ void GameScene::render(sf::RenderWindow& window) {
 
 void GameScene::onEnter() {
 	std::cout << "Entered Game Scene \n";
+
+	const auto& texHolder = getSharedContext().texHolder;
+	m_sprite.setTexture(texHolder.get(TextureId::kTitle));
 }
 
 void GameScene::onExit() {
