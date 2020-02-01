@@ -27,9 +27,15 @@
 <<<<<<< HEAD
     <ClInclude Include="ResourceHolder.h" />
     <ClInclude Include="SharedContext.h" />
+<<<<<<< HEAD
     <ClInclude Include="Gear.h" />
 =======
     <ClInclude Include="Clock.h" />
 >>>>>>> 3f338f78a3fed35ce6f36750f317dc05205b5c95
+=======
+=======
+    <ClInclude Include="Clock.h" />
+>>>>>>> BenClockClass
+>>>>>>> 98c139eb6a9ff098aac008005c341d90b215b117
   </ItemGroup>
 </Project>
