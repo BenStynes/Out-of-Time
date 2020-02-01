@@ -1,5 +1,5 @@
 #include "BaseScene.h"
-
+#include "Clock.h"
 class GameScene final : public BaseScene {
 public:
 	GameScene(SceneManager& sceneManager, const SceneType sceneType);
@@ -11,4 +11,7 @@ public:
 	void onExit() override;
 
 private:
+	Clock m_clock;
+	sf::Vector2f m_mousePos;
+	bool inRightPos = false;
 };

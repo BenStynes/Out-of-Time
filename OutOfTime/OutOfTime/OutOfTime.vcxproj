@@ -144,6 +144,7 @@ xcopy /E /Y "$(ProjectDir)Assets" "$(TargetDir)Assets\"</Command>
   <ItemGroup>
     <ClCompile Include="App.cpp" />
     <ClCompile Include="BaseScene.cpp" />
+    <ClCompile Include="Clock.cpp" />
     <ClCompile Include="GameoverScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Gear.cpp" />
@@ -155,6 +156,7 @@ xcopy /E /Y "$(ProjectDir)Assets" "$(TargetDir)Assets\"</Command>
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="Clock.h" />
     <ClInclude Include="GameoverScene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Gear.h" />

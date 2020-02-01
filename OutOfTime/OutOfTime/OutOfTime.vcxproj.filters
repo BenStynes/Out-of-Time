@@ -9,7 +9,11 @@
     <ClCompile Include="TitleScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GameoverScene.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="Gear.cpp" />
+=======
+    <ClCompile Include="Clock.cpp" />
+>>>>>>> 3f338f78a3fed35ce6f36750f317dc05205b5c95
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
@@ -20,8 +24,12 @@
     <ClInclude Include="TitleScene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="GameoverScene.h" />
+<<<<<<< HEAD
     <ClInclude Include="ResourceHolder.h" />
     <ClInclude Include="SharedContext.h" />
     <ClInclude Include="Gear.h" />
+=======
+    <ClInclude Include="Clock.h" />
+>>>>>>> 3f338f78a3fed35ce6f36750f317dc05205b5c95
   </ItemGroup>
 </Project>
