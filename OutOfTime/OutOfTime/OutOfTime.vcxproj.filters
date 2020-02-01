@@ -9,6 +9,7 @@
     <ClCompile Include="TitleScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GameoverScene.cpp" />
+    <ClCompile Include="Clock.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
@@ -19,7 +20,11 @@
     <ClInclude Include="TitleScene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="GameoverScene.h" />
+<<<<<<< HEAD
     <ClInclude Include="ResourceHolder.h" />
     <ClInclude Include="SharedContext.h" />
+=======
+    <ClInclude Include="Clock.h" />
+>>>>>>> BenClockClass
   </ItemGroup>
 </Project>
