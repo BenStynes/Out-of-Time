@@ -31,6 +31,8 @@ void GameScene::update(const sf::Time deltaTime) {
 }
 
 void GameScene::render(sf::RenderWindow& window) {
+
+	window.draw(m_sprite);
 	m_clock.render(window);
 }
 
@@ -38,7 +40,8 @@ void GameScene::onEnter() {
 	std::cout << "Entered Game Scene \n";
 
 	const auto& texHolder = getSharedContext().texHolder;
-	m_sprite.setTexture(texHolder.get(TextureId::kTitle));
+	m_sprite.setTexture(texHolder.get(TextureId::kGameBackground));
+	m_sprite.setScale(2, 2);
 }
 
 void GameScene::onExit() {

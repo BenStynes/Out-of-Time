@@ -32,6 +32,7 @@ void TitleScene::onEnter() {
 
 	const auto& texHolder = getSharedContext().texHolder;
 	m_sprite.setTexture(texHolder.get(TextureId::kTitle));
+	m_sprite.scale(2, 2);
 }
 
 

@@ -5,7 +5,7 @@
 #include "SharedContext.h"
 
 App::App() : 
-	m_window { sf::VideoMode(800, 600), "OutOfTime", sf::Style::Close },
+	m_window { sf::VideoMode(1600U, 1200U), "OutOfTime", sf::Style::Close },
 	m_sceneManager{ SharedContext { m_texHolder, m_fontHolder, m_musicHolder, m_soundHolder } },
 	m_timePerFrame{ sf::seconds(1.f / 60.f) } {
 }
@@ -13,7 +13,7 @@ App::App() :
 bool App::setup() {
 	// Load Textures
 	m_texHolder.load(TextureId::kTitle, "Assets/Texture/Backgrounds/title.png");
-	m_texHolder.load(TextureId::kGameBackground, "Assets/Texture/Backgrounds/splashScreenText.jpg");
+	m_texHolder.load(TextureId::kGameBackground, "Assets/Texture/Backgrounds/splashScreenTexture.jpg");
 	// Load Font
 
 	// Load Sound
