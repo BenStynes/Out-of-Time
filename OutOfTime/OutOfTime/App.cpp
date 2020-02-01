@@ -5,14 +5,14 @@
 #include "SharedContext.h"
 
 App::App() : 
-	m_window { sf::VideoMode(640, 480), "OutOfTime", sf::Style::Close },
+	m_window { sf::VideoMode(800, 600), "OutOfTime", sf::Style::Close },
 	m_sceneManager{ SharedContext { m_texHolder, m_fontHolder, m_musicHolder, m_soundHolder } },
 	m_timePerFrame{ sf::seconds(1.f / 60.f) } {
 }
 
 bool App::setup() {
 	// Load Textures
-	m_texHolder.load(TextureId::kBase, "Assets/Texture/base.png");
+	m_texHolder.load(TextureId::kBase, "Assets/Texture/Backgrounds/title.png");
 	
 	// Load Font
 
