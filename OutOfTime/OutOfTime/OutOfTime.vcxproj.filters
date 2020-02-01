@@ -19,5 +19,7 @@
     <ClInclude Include="TitleScene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="GameoverScene.h" />
+    <ClInclude Include="ResourceHolder.h" />
+    <ClInclude Include="SharedContext.h" />
   </ItemGroup>
 </Project>

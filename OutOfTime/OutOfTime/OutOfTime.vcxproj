@@ -156,8 +156,10 @@ xcopy /E /Y "$(ProjectDir)Assets" "$(TargetDir)Assets\"</Command>
     <ClInclude Include="BaseScene.h" />
     <ClInclude Include="GameoverScene.h" />
     <ClInclude Include="GameScene.h" />
+    <ClInclude Include="ResourceHolder.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SceneTypes.h" />
+    <ClInclude Include="SharedContext.h" />
     <ClInclude Include="SplashScene.h" />
     <ClInclude Include="TitleScene.h" />
   </ItemGroup>
