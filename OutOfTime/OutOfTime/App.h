@@ -2,7 +2,9 @@
 
 #include <SFML/Graphics/RenderWindow.hpp>
 #include <SFML/System/Time.hpp>
+
 #include "SceneManager.h"
+#include "ResourceHolder.h"
 
 class App {
 public:
@@ -14,5 +16,10 @@ private:
 	const sf::Time m_timePerFrame;
 	sf::RenderWindow m_window;
 	SceneManager m_sceneManager;
+
+	ResourceHolder<TextureId, sf::Texture> m_texHolder;
+	ResourceHolder<FontId,    sf::Font>    m_fontHolder;
+	ResourceHolder<MusicId,   sf::Music>   m_musicHolder;
+	ResourceHolder<SoundId,   sf::Sound>   m_soundHolder;
 };
 

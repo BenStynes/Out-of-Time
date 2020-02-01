@@ -1,12 +1,11 @@
 #include "SceneManager.h"
 
 #include <algorithm>
-
 #include "TitleScene.h"
 #include "GameScene.h"
 #include "GameoverScene.h"
 
-SceneManager::SceneManager() { 
+SceneManager::SceneManager(const SharedContext& context) : m_sharedContext{ context } { 
 	registerScene<TitleScene>(SceneType::kTitle);
 	registerScene<GameScene>(SceneType::kGame);
 	registerScene<GameoverScene>(SceneType::kGameover);
@@ -67,6 +66,10 @@ bool SceneManager::isSceneStackEmpty() const{
 
 SceneType SceneManager::getCurrentScene() const {
     return m_sceneStack.back()->getSceneType();
+}
+
+const SharedContext& SceneManager::getSharedContext() const {
+	return m_sharedContext;
 }
 
 void SceneManager::pushScene(const SceneType sceneType) {

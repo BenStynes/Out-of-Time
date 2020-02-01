@@ -2,20 +2,21 @@
 
 #include <SFML/Window/Event.hpp>
 
+#include "SharedContext.h"
+
 App::App() : 
 	m_window { sf::VideoMode(640, 480), "OutOfTime", sf::Style::Close },
-	m_sceneManager{ },
+	m_sceneManager{ SharedContext { m_texHolder, m_fontHolder, m_musicHolder, m_soundHolder } },
 	m_timePerFrame{ sf::seconds(1.f / 60.f) } {
 }
 
 bool App::setup() {
-	// Register Scenes
-
 	// Load Textures
-
+	m_texHolder.load(TextureId::kBase, "Assets/Texture/base.png");
+	
 	// Load Font
 
-	// Load SFX
+	// Load Sound
 
 	// Load Music
 

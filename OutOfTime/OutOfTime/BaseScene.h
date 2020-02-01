@@ -5,6 +5,7 @@
 #include <SFML/Window/Event.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
 
+#include "SharedContext.h"
 #include "SceneTypes.h"
 
 class SceneManager;
@@ -24,7 +25,7 @@ public:
     SceneType getSceneType() const;
 
 protected:
-
+	const SharedContext& getSharedContext() const;
     void requestPushScene(const SceneType sceneType) const;
     void requestRemoveCurrentScene() const;
     void requestRemoveAllScenes() const;

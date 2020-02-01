@@ -24,15 +24,16 @@ void TitleScene::update(const sf::Time deltaTime) {
 }
 
 void TitleScene::render(sf::RenderWindow& window) {
-	// How to Render
-	sf::CircleShape shape(50);
-	shape.setFillColor(sf::Color(100, 250, 50));
-	window.draw(shape);
+	window.draw(m_sprite);
 }
 
 void TitleScene::onEnter() {
-    std::cout << "Entered Title Scene \n";
+	std::cout << "Entered Title Scene \n";
+
+	const auto& texHolder = getSharedContext().texHolder;
+	m_sprite.setTexture(texHolder.get(TextureId::kBase));
 }
+
 
 void TitleScene::onExit() {
     std::cout << "Exit Title Scene \n";

@@ -18,6 +18,10 @@ SceneType BaseScene::getSceneType() const{
     return m_sceneType;
 }
 
+const SharedContext& BaseScene::getSharedContext() const {
+	return m_sceneManager.getSharedContext();
+}
+
 void BaseScene::requestPushScene(const SceneType sceneType) const {
     m_sceneManager.requestPushScene(sceneType);
 }
