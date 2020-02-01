@@ -2,5 +2,22 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="BaseScene.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SplashScene.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GameoverScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SceneTypes.h" />
+    <ClInclude Include="SplashScene.h" />
+    <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="GameoverScene.h" />
   </ItemGroup>
 </Project>
