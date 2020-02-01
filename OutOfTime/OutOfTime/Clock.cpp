@@ -93,9 +93,6 @@ sf::Vector2f Clock::getWinPosition(int t_help)
 	case 3:
 		return m_winPositions[3];
 		break;
-	case 4:
-		return m_winPositions[4];
-		break;
 	}
 }
 
