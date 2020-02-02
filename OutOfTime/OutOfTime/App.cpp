@@ -5,13 +5,9 @@
 #include "SharedContext.h"
 
 App::App() : 
-<<<<<<< HEAD
-	m_window { sf::VideoMode(1600U, 1200U), "OutOfTime", sf::Style::Close },
-	m_sceneManager{ SharedContext { m_texHolder, m_fontHolder, m_musicHolder, m_soundHolder } },
-=======
+
 	m_window { sf::VideoMode(800, 600), "OutOfTime", sf::Style::Close },
-	m_sceneManager{ SharedContext { m_texHolder, m_fontHolder, m_soundHolder } },
->>>>>>> 7b087679b1ab91a82a5badbb650f87637e276133
+	m_sceneManager{ SharedContext {m_texHolder, m_fontHolder, m_soundHolder } },
 	m_timePerFrame{ sf::seconds(1.f / 60.f) } {
 }
 
