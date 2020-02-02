@@ -42,6 +42,8 @@ void GameScene::onEnter() {
 	const auto& texHolder = getSharedContext().texHolder;
 	m_sprite.setTexture(texHolder.get(TextureId::kGameBackground));
 	m_sprite.setScale(2, 2);
+
+	initialiseGears();
 }
 
 void GameScene::onExit() {
@@ -51,5 +53,9 @@ void GameScene::onExit() {
 void GameScene::initialiseGears()
 {
 	const auto& texHolder = getSharedContext().texHolder;
-	firstTempGear.initialise(sf::Vector2f(600, 300), texHolder.get(TextureId::kBSOne), Gear::GearType::kGearA);
+	for (int loop = 0; loop < 9; loop++)
+	{
+		allGears[loop].initialise(sf::Vector2f(0.0f, 0.0f), texHolder.get(TextureId(loop)), Gear::GearType::kGearA);
+	}
+	int i = 0;
 }

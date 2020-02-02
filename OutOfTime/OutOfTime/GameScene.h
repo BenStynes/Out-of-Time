@@ -18,8 +18,7 @@ private:
 	sf::Vector2f m_mousePos;
 	bool inRightPos = false;
 
-	Gear firstTempGear, secondTempGear, thirdTempGear, fourthTempGear;
-	Gear firstFinalGear, secondFinalGear, thirdFinalGear, fourthFinalGear, fifthFinalGear;
+	Gear allGears[9];
 
 	sf::Sprite m_sprite;
 };

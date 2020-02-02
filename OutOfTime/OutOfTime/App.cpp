@@ -6,7 +6,7 @@
 
 App::App() : 
 
-	m_window { sf::VideoMode(800, 600), "OutOfTime", sf::Style::Close },
+	m_window { sf::VideoMode(1600, 1200), "OutOfTime", sf::Style::Close },
 	m_sceneManager{ SharedContext {m_texHolder, m_fontHolder, m_soundHolder } },
 	m_timePerFrame{ sf::seconds(1.f / 60.f) } {
 }
@@ -16,10 +16,31 @@ bool App::setup() {
 	m_texHolder.load(TextureId::kTitle, "Assets/Texture/Backgrounds/title.png");
 	m_texHolder.load(TextureId::kGameBackground, "Assets/Texture/Backgrounds/splashScreenTexture.jpg");
 
-	m_texHolder.load(TextureId::kBSOne, "Assets/Texture/BalanceSpring/BalanceSpringSet1");
-	m_texHolder.load(TextureId::kBSTwo, "Assets/Texture/BalanceSpring/BalanceSpringSet2");
-	m_texHolder.load(TextureId::kBSThree, "Assets/Texture/BalanceSpring/BalanceSpringSet3");
-	m_texHolder.load(TextureId::kBSFour, "Assets/Texture/BalanceSpring/BalanceSpringSet4");
+	m_texHolder.load(TextureId::kBSOne, "Assets/Texture/BalanceSpring/BalanceSpringSet1.png");
+	m_texHolder.load(TextureId::kBSTwo, "Assets/Texture/BalanceSpring/BalanceSpringSet2.png");
+	m_texHolder.load(TextureId::kBSThree, "Assets/Texture/BalanceSpring/BalanceSpringSet3.png");
+	m_texHolder.load(TextureId::kBSFour, "Assets/Texture/BalanceSpring/BalanceSpringSet4.png");
+
+	m_texHolder.load(TextureId::kCWOne, "Assets/Texture/CentreWheel/SecondGearSet1.png");
+	m_texHolder.load(TextureId::kCWTwo, "Assets/Texture/CentreWheel/SecondGearSet2.png");
+	m_texHolder.load(TextureId::kCWThree, "Assets/Texture/CentreWheel/SecondGearSet3.png");
+	m_texHolder.load(TextureId::kCWFour, "Assets/Texture/CentreWheel/SecondGearSet4.png");
+
+	m_texHolder.load(TextureId::kFWOne, "Assets/Texture/FourthWheel/FourthWheelSet1.png");
+	m_texHolder.load(TextureId::kFWTwo, "Assets/Texture/FourthWheel/FourthWheelSet2.png");
+	m_texHolder.load(TextureId::kFWThree, "Assets/Texture/FourthWheel/FourthWheelSet3.png");
+	m_texHolder.load(TextureId::kFWFour, "Assets/Texture/FourthWheel/FourthWheelSet4.png");
+
+	m_texHolder.load(TextureId::kMSOne, "Assets/Texture/MainSpring/MainSpringSet1.png");
+	m_texHolder.load(TextureId::kMSTwo, "Assets/Texture/MainSpring/MainSpringSet2.png");
+	m_texHolder.load(TextureId::kMSThree, "Assets/Texture/MainSpring/MainSpringSet3.png");
+	m_texHolder.load(TextureId::kMSFour, "Assets/Texture/MainSpring/MainSpringSet4.png");
+
+	m_texHolder.load(TextureId::kTWOne, "Assets/Texture/ThirdWheel/ThirdWheelSet1.png");
+	m_texHolder.load(TextureId::kTWTwo, "Assets/Texture/ThirdWheel/ThirdWheelSet2.png");
+	m_texHolder.load(TextureId::kTWThree, "Assets/Texture/ThirdWheel/ThirdWheelSet3.png");
+	m_texHolder.load(TextureId::kTWFour, "Assets/Texture/ThirdWheel/ThirdWheelSet4.png");
+
 
 	// Load Font
 

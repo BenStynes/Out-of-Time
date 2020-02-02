@@ -8,10 +8,12 @@ public:
 
 	Gear();
 
-	enum class GearType {
+	enum GearType {
 		kNone,
 		kGearA, 
-		kGearB
+		kGearB,
+		kGearC,
+		kGearD,
 	};
 
 	void setPosition(sf::Vector2f newPoint);

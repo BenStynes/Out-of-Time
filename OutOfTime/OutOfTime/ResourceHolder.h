@@ -10,7 +10,7 @@
 #include <SFML/Graphics/Font.hpp>
 #include <SFML/Graphics/Texture.hpp>
 
-enum class TextureId {
+enum TextureId {
 	kTitle,
 	kGameBackground,
 
