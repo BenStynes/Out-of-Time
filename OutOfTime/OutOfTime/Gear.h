@@ -1,26 +1,30 @@
 #pragma once
 
+
 #include <SFML/Graphics.hpp>
-//class Gear
-//{
-//public:
-//	void setPosition(sf::Vector2f newPoint);
-//	sf::Vector2f getPosition();
-//
-//	void setSetNumber(int newSetNum);
-//	int getSetNumber();
-//
-//	void setGearType(sf::String newType);
-//	sf::String getGearType();
-//
-//	void initialise(sf::Vector2f newPos, sf::Texture newTexture, int setNum, std::string newGearType);
-//
-//private:
-//	sf::Sprite sprite;
-//	sf::Texture texture;
-//
-//	sf::Vector2f position{ 0.0f, 0.0f };// Position
-//	int setNumber{ 0 };// What set it belongs to
-//	sf::String gearType{ "" };// What gear type it is
-//};
+class Gear
+{
+public:
+
+	Gear();
+
+	enum class GearType {
+		kNone,
+		kGearA, 
+		kGearB
+	};
+
+	void setPosition(sf::Vector2f newPoint);
+	sf::Vector2f getPosition();
+
+	void setGearType(GearType gearType);
+	GearType getGearType();
+
+	void initialise(sf::Vector2f newPos, const sf::Texture& newTexture, GearType gearType);
+
+private:
+	GearType m_gearType;
+	sf::Vector2f m_pos;
+	sf::Sprite m_sprite;
+};
 

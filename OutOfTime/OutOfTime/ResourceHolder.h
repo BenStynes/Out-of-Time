@@ -12,7 +12,32 @@
 
 enum class TextureId {
 	kTitle,
-	kGameBackground
+	kGameBackground,
+
+	kBSOne,
+	kBSTwo,
+	kBSThree,
+	kBSFour,
+
+	kCWOne,
+	kCWTwo,
+	kCWThree,
+	kCWFour,
+
+	kFWOne,
+	kFWTwo,
+	kFWThree,
+	kFWFour,
+
+	kMSOne,
+	kMSTwo,
+	kMSThree,
+	kMSFour,
+
+	kTWOne,
+	kTWTwo,
+	kTWThree,
+	kTWFour
 };
 
 enum class SoundId {

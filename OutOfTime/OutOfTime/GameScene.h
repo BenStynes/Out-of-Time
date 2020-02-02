@@ -1,6 +1,6 @@
 #include "BaseScene.h"
 #include "Clock.h"
-//#include "Gear.h"
+#include "Gear.h"
 class GameScene final : public BaseScene {
 public:
 	GameScene(SceneManager& sceneManager, const SceneType sceneType);
@@ -10,7 +10,7 @@ public:
 	void render(sf::RenderWindow& window) override;
 	void onEnter() override;
 	void onExit() override;
-
+	void initialiseGears();
 
 
 private:
@@ -18,8 +18,8 @@ private:
 	sf::Vector2f m_mousePos;
 	bool inRightPos = false;
 
-	//Gear firstTempGear, secondTempGear, thirdTempGear, fourthTempGear;
-	//Gear firstFinalGear, secondFinalGear, thirdFinalGear, fourthFinalGear, fifthFinalGear;
+	Gear firstTempGear, secondTempGear, thirdTempGear, fourthTempGear;
+	Gear firstFinalGear, secondFinalGear, thirdFinalGear, fourthFinalGear, fifthFinalGear;
 
 	sf::Sprite m_sprite;
 };

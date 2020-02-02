@@ -10,6 +10,9 @@ void Clock::setUpClock()
 {
 	m_clockTexture.loadFromFile("Assets/Texture/Base.png");
 	m_clockSprite.setTexture(m_clockTexture);
+
+	m_clockSprite.setPosition(400, 300);
+	m_clockSprite.setScale(2, 2);
 	for (int i = 0; i < 4; i++)
 	{
 		winTypes[i] = 1;

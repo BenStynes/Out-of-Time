@@ -47,3 +47,9 @@ void GameScene::onEnter() {
 void GameScene::onExit() {
 	std::cout << "Exit Game Scene \n";
 }
+
+void GameScene::initialiseGears()
+{
+	const auto& texHolder = getSharedContext().texHolder;
+	firstTempGear.initialise(sf::Vector2f(600, 300), texHolder.get(TextureId::kBSOne), Gear::GearType::kGearA);
+}
