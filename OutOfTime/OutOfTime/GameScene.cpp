@@ -12,6 +12,22 @@ void GameScene::handleEvents(const sf::Event& event)
 		m_mousePos.x  =sf::Mouse::getPosition().x;
 		m_mousePos.y = sf::Mouse::getPosition().y;
 	}
+	if (event.type == sf::Event::MouseButtonPressed)
+	{
+		for (int i = 0; i < 9; i++)
+		{
+			float distance;
+			distance = sqrt(((m_mousePos.x - m_winPositions[i].x) * ((m_mousePos.x - m_winPositions[i].x)) +
+				((m_mousePos.y - m_winPositions[i].y) * (m_mousePos.y - m_winPositions[i].y))));
+			if (firstTempGear.getPosition().x)
+			{
+
+
+			}
+		
+		}
+	}
+
 }
 
 void GameScene::update(const sf::Time deltaTime) {
