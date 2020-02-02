@@ -18,7 +18,9 @@ private:
 	sf::Vector2f m_mousePos;
 	bool inRightPos = false;
 
+	int m_retries{ 3 };
 	Gear allGears[9];
-
+	sf::Music m_music;
 	sf::Sprite m_sprite;
+	sf::Text winText;
 };

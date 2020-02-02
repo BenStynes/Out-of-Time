@@ -1,5 +1,6 @@
 #pragma once
 #include "BaseScene.h"
+#include <SFML/Graphics/Sprite.hpp>
 
 class GameoverScene final : public BaseScene {
 public:
@@ -12,4 +13,7 @@ public:
 	void onExit() override;
 
 private:
+
+	sf::Music m_music;
+	sf::Sprite m_sprite;
 };

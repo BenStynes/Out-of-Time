@@ -13,6 +13,7 @@
 enum TextureId {
 	kTitle,
 	kGameBackground,
+	kGameOver,
 
 	kBSOne,
 	kBSTwo,
@@ -48,7 +49,7 @@ enum class MusicId {
 	kTitle,
 };
 
-enum class FontId {
+enum FontId {
 	kRoboto,
 };
 

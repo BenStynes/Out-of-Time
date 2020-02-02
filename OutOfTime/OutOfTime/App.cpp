@@ -15,6 +15,7 @@ bool App::setup() {
 	// Load Textures
 	m_texHolder.load(TextureId::kTitle, "Assets/Texture/Backgrounds/title.png");
 	m_texHolder.load(TextureId::kGameBackground, "Assets/Texture/Backgrounds/splashScreenTexture.jpg");
+	m_texHolder.load(TextureId::kGameOver, "Assets/Texture/Backgrounds/title.png");
 
 	m_texHolder.load(TextureId::kBSOne, "Assets/Texture/BalanceSpring/BalanceSpringSet1.png");
 	m_texHolder.load(TextureId::kBSTwo, "Assets/Texture/BalanceSpring/BalanceSpringSet2.png");
@@ -43,7 +44,7 @@ bool App::setup() {
 
 
 	// Load Font
-
+	m_fontHolder.load(FontId::kRoboto, "Assets/Fonts/MOD20.TTF");
 	// Load Sound
 
 	// Load Music

@@ -16,7 +16,15 @@ void GameoverScene::render(sf::RenderWindow& window) {
 }
 
 void GameoverScene::onEnter() {
-	std::cout << "Entered Title Scene";
+	std::cout << "Entered GameOver Screen \n";
+
+	if (m_music.openFromFile("Assets/Music/GameOverMusic.wav")) {
+		m_music.play();
+	}
+
+	const auto& texHolder = getSharedContext().texHolder;
+	m_sprite.setTexture(texHolder.get(TextureId::kGameOver));
+	m_sprite.scale(2, 2);
 }
 
 void GameoverScene::onExit() {

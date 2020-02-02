@@ -26,7 +26,23 @@ void GameScene::update(const sf::Time deltaTime) {
 	
 		}
 
+		if (m_retries < 1)
+		{
+			requestPushScene(SceneType::kGameover);
+		}
 
+		// If all pieces are in the right place
+		// if (m_music.openFromFile("Assets/Music/WinningMusic.wav")) 
+		//{
+		// m_music.play();
+		// m_music.setLoop(false);
+		// 
+		/* 	const auto& fontHolder = getSharedContext().fontHolder;
+		winText.setFillColor(sf::Color::White);
+		winText.setPosition(800, 600);
+		winText.setFont(fontHolder.get(kRoboto));
+		then display text
+		}*/
 	}
 }
 
@@ -44,6 +60,11 @@ void GameScene::onEnter() {
 	m_sprite.setScale(2, 2);
 
 	initialiseGears();
+
+	if (m_music.openFromFile("Assets/Music/BackgroundMusic.wav")) {
+		m_music.play();
+		m_music.setLoop(true);
+	}
 }
 
 void GameScene::onExit() {
