@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
     <ClCompile Include="App.cpp" />
     <ClCompile Include="BaseScene.cpp" />
+    <ClCompile Include="Clock.cpp" />
+    <ClCompile Include="GameoverScene.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SplashScene.cpp" />
     <ClCompile Include="TitleScene.cpp" />
+<<<<<<< HEAD
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="GameoverScene.cpp" />
 <<<<<<< HEAD
@@ -14,14 +18,22 @@
 =======
     <ClCompile Include="Clock.cpp" />
 >>>>>>> 3f338f78a3fed35ce6f36750f317dc05205b5c95
+=======
+>>>>>>> 7b087679b1ab91a82a5badbb650f87637e276133
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="App.h" />
     <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="Clock.h" />
+    <ClInclude Include="GameoverScene.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="ResourceHolder.h" />
     <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SceneTypes.h" />
+    <ClInclude Include="SharedContext.h" />
     <ClInclude Include="SplashScene.h" />
     <ClInclude Include="TitleScene.h" />
+<<<<<<< HEAD
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="GameoverScene.h" />
 <<<<<<< HEAD
@@ -37,5 +49,7 @@
     <ClInclude Include="Clock.h" />
 >>>>>>> BenClockClass
 >>>>>>> 98c139eb6a9ff098aac008005c341d90b215b117
+=======
+>>>>>>> 7b087679b1ab91a82a5badbb650f87637e276133
   </ItemGroup>
 </Project>

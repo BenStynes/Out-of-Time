@@ -30,6 +30,10 @@ void TitleScene::render(sf::RenderWindow& window) {
 void TitleScene::onEnter() {
 	std::cout << "Entered Title Scene \n";
 
+	if (m_music.openFromFile("Assets/Music/IntroNoise.wav")) {
+		m_music.play();
+	}
+
 	const auto& texHolder = getSharedContext().texHolder;
 	m_sprite.setTexture(texHolder.get(TextureId::kTitle));
 	m_sprite.scale(2, 2);

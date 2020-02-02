@@ -59,7 +59,7 @@ public:
 		std::unique_ptr<Resource> resource = std::make_unique<Resource>();
 		if (resource->loadFromFile(filename)) {
 			m_resourceHolder[id] = std::move(resource);
-			std::cout << filename << " Texture Loaded\n";
+			std::cout << filename << " Resource Loaded\n";
 		}
 	}
 

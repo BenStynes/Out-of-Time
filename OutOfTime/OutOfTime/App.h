@@ -19,7 +19,6 @@ private:
 
 	ResourceHolder<TextureId, sf::Texture> m_texHolder;
 	ResourceHolder<FontId,    sf::Font>    m_fontHolder;
-	ResourceHolder<MusicId,   sf::Music>   m_musicHolder;
 	ResourceHolder<SoundId,   sf::Sound>   m_soundHolder;
 };
 
