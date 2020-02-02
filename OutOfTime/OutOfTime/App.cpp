@@ -6,7 +6,7 @@
 
 App::App() : 
 	m_window { sf::VideoMode(800, 600), "OutOfTime", sf::Style::Close },
-	m_sceneManager{ SharedContext { m_texHolder, m_fontHolder, m_musicHolder, m_soundHolder } },
+	m_sceneManager{ SharedContext { m_texHolder, m_fontHolder, m_soundHolder } },
 	m_timePerFrame{ sf::seconds(1.f / 60.f) } {
 }
 

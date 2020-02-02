@@ -14,5 +14,6 @@ public:
     void onExit() override;
 
 private:
+	sf::Music m_music;
 	sf::Sprite m_sprite;
 };
