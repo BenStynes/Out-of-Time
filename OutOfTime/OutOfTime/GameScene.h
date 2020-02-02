@@ -23,4 +23,6 @@ private:
 	sf::Music m_music;
 	sf::Sprite m_sprite;
 	sf::Text winText;
+
+	bool m_displayText{ false };
 };

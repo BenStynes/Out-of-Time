@@ -12,6 +12,28 @@ void GameScene::handleEvents(const sf::Event& event)
 		m_mousePos.x  =sf::Mouse::getPosition().x;
 		m_mousePos.y = sf::Mouse::getPosition().y;
 	}
+
+	if (event.type == sf::Event::MouseButtonReleased)
+	{
+		if (sf::Mouse::Button::Left == event.key.code)
+		{
+			if (m_music.openFromFile("Assets/Music/WinningMusic.wav"))
+			{
+				m_music.play();
+				m_music.setLoop(false);
+
+				const auto& fontHolder = getSharedContext().fontHolder;
+				winText.setFillColor(sf::Color::White);
+				winText.setOutlineColor(sf::Color::Black);
+				winText.setOutlineThickness(1);
+				winText.setScale(3, 3);
+				winText.setPosition(500, 450);
+				winText.setFont(fontHolder.get(kRoboto));
+				winText.setString("\t\tYou Win!\n\nWe ran out of time.");
+				m_displayText = true;
+			}
+		}
+	}
 }
 
 void GameScene::update(const sf::Time deltaTime) {
@@ -31,18 +53,7 @@ void GameScene::update(const sf::Time deltaTime) {
 			requestPushScene(SceneType::kGameover);
 		}
 
-		// If all pieces are in the right place
-		// if (m_music.openFromFile("Assets/Music/WinningMusic.wav")) 
-		//{
-		// m_music.play();
-		// m_music.setLoop(false);
-		// 
-		/* 	const auto& fontHolder = getSharedContext().fontHolder;
-		winText.setFillColor(sf::Color::White);
-		winText.setPosition(800, 600);
-		winText.setFont(fontHolder.get(kRoboto));
-		then display text
-		}*/
+		
 	}
 }
 
@@ -50,6 +61,11 @@ void GameScene::render(sf::RenderWindow& window) {
 
 	window.draw(m_sprite);
 	m_clock.render(window);
+	if (m_displayText)
+	{
+		window.draw(winText);
+	}
+
 }
 
 void GameScene::onEnter() {
